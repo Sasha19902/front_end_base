@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.header {
+    padding-top: 45px;
+}
+
+.header, .main {
+    width: 1250px;
+    margin: 0 auto;
+    padding-left: 60px;
+}
+
+.main__left, .main__right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main__right {
+    box-sizing: border-box;
+    width: 820px;
+    padding-left: 60px;
+}
+
+.personal-discription__title {
+    margin: 0;
+    padding: 10px 35px;
+    background-color: #e8c734;
+    font-family: Arial;
+    font-size: 23px;
+    color: #424243;
+}
+
+.personal-discription__text {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial;
+    color: #424243;
+    word-spacing: 5px;
+    line-height: 27px;
+}
