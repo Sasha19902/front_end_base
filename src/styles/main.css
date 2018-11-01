@@ -1,43 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Montserrat');
+
 body {
     margin: 0;
 }
 
-.header {
-    padding-top: 45px;
-}
-
-.header, .main {
+.main {
+    padding-top: 30px;
     width: 1250px;
     margin: 0 auto;
-    padding-left: 60px;
 }
 
-.main__left, .main__right {
+.top-book-block {
+    text-align: center;
+}
+
+
+.book__theme, .book__title, .book__data, .comments__count, .book-bottom__link {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.book-picture {
+    margin: 0;
+    padding-bottom: 65px;
+}
+
+.book__theme {
+    font-family: Hind;
+    color: #b7b7b7;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+
+.book__title {
+    padding-bottom: 10px;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+
+.book__data {
+    padding-bottom: 30px;
+    font-family: Hind;
+    font-size: 14px;
+    color: #b7b7b7;
+    letter-spacing: 0.1em;
+}
+
+
+.line {
+    width: 30px;
+}
+
+.book-comment-block {
+    border:1px solid #f7f7f7;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 20px;
+}
+
+.book-comment-block:hover {
+    background-color: #d67900;
+}
+
+.comments__count {
+    padding-left: 10px;
     display: inline-block;
-    vertical-align: top;
-}
-
-.main__right {
-    box-sizing: border-box;
-    width: 820px;
-    padding-left: 60px;
-}
-
-.personal-discription__title {
-    margin: 0;
-    padding: 10px 35px;
-    background-color: #e8c734;
-    font-family: Arial;
-    font-size: 23px;
-    color: #424243;
-}
-
-.personal-discription__text {
+    color: #acacac;
+    font-family: Hind;
+    padding-bottom: 20px;
     padding-top: 20px;
+}
+
+.comment-site {
+    text-decoration: none;
+}
+
+.book-bottom {
+    display: inline-block;
+}
+
+.book-bottom :hover {
+    color: #d67900;
+}
+
+.book-bottom__link {
+    font-family: Hind;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: #979797;
+}
+
+.object-book {
     margin: 0;
-    font-size: 18px;
-    font-family: Arial;
-    color: #424243;
-    word-spacing: 5px;
-    line-height: 27px;
+    display: inline-block;
+    box-shadow: 0 0 30px rgba(0,0,3,0.5);
 }
