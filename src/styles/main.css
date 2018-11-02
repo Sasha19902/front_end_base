@@ -14,18 +14,20 @@ body {
     text-align: center;
 }
 
-
 .book__theme, .book__title, .book__data, .comments__count, .book-bottom__link {
     margin: 0;
     text-transform: uppercase;
 }
 
-.book-picture {
-    margin: 0;
-    padding-bottom: 65px;
+.book-picture__background {
+    background-image: url(../images/picture.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-bottom: 245px
 }
 
 .book__theme {
+    padding-top: 60px;
     font-family: Hind;
     color: #b7b7b7;
     font-weight: normal;
@@ -47,16 +49,9 @@ body {
     letter-spacing: 0.1em;
 }
 
-
-.line {
-    width: 30px;
-}
-
 .book-comment-block {
-    border:1px solid #f7f7f7;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
+    border: 0 solid #f7f7f7;
+    border-top-width: 1px;
     padding-left: 20px;
 }
 
@@ -65,7 +60,7 @@ body {
 }
 
 .comments__count {
-    padding-left: 10px;
+    padding-left: 30px;
     display: inline-block;
     color: #acacac;
     font-family: Hind;
@@ -79,9 +74,31 @@ body {
 
 .book-bottom {
     display: inline-block;
+    color: #d6d6d6;
+    padding-bottom: 30px;
 }
 
-.book-bottom :hover {
+.book-bottom:before {
+    content: " ";
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 36px;
+    border-bottom: 1px solid;
+    width: 30px;
+    display: flex;
+}
+
+.book-bottom:after {
+    content: " ";
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 36px;
+    border-bottom: 1px solid;
+    width: 30px;
+}
+
+.book-bottom:hover:before , .book-bottom:hover:after, .book-bottom:hover {
     color: #d67900;
 }
 
@@ -89,11 +106,17 @@ body {
     font-family: Hind;
     letter-spacing: 0.2em;
     text-decoration: none;
-    color: #979797;
+    color: inherit;
+}
+
+.comment__icon {
+    background-image: url(../images/Icon.png);
+    background-position:left center;
+    background-repeat: no-repeat;
 }
 
 .object-book {
-    margin: 0;
+    width: 360px;
     display: inline-block;
     box-shadow: 0 0 30px rgba(0,0,3,0.5);
 }
