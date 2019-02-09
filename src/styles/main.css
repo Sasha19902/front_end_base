@@ -1,122 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=Hind|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-body {
+
+.html-form {
+    width: 430px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+.html-form__introduction {
     margin: 0;
-}
-
-.main {
-    padding-top: 30px;
-    width: 1250px;
-    margin: 0 auto;
-}
-
-.top-book-block {
+    padding: 67px 0 20px 0;
     text-align: center;
+    color: #262e73;
+    font-size: 33px;
+    font-family: "PT Sans";
 }
 
-.book__theme, .book__title, .book__data, .comments__count, .book-bottom__link {
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.book-picture__background {
-    background-image: url(../images/picture.png);
-    background-position:center;
-    background-repeat: no-repeat;
-    padding-bottom: 245px
-}
-
-.book__theme {
-    padding-top: 60px;
-    font-family: Hind;
-    color: #b7b7b7;
-    font-weight: normal;
-    letter-spacing: 0.1em;
-    padding-bottom: 10px;
-}
-
-.book__title {
-    padding-bottom: 10px;
-    font-family: Montserrat;
-    font-weight: bolder;
-}
-
-.book__data {
-    padding-bottom: 30px;
-    font-family: Hind;
+.description {
+    padding-bottom: 6px;
+    color: #262e73;
     font-size: 14px;
-    color: #b7b7b7;
-    letter-spacing: 0.1em;
+    font-family: "PT Sans";
+    display: block;
 }
 
-.book-comment-block {
-    border: 0 solid #f7f7f7;
-    border-top-width: 1px;
-    padding-left: 20px;
+.input__checkbox-description {
+    color: #565d69;
+    font-size: 12px;
+    font-family: "PT Sans";
+    display: block;
 }
 
-.book-comment-block:hover {
-    background-color: #d67900;
-}
-
-.comments__count {
-    padding-left: 30px;
-    display: inline-block;
-    color: #acacac;
-    font-family: Hind;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.comment-site {
+.input__checkbox_link {
     text-decoration: none;
+    color: #262e73;
 }
 
-.book-bottom {
-    display: inline-block;
-    color: #d6d6d6;
-    padding-bottom: 30px;
+.radio__gender-type {
+    font-family: "PT Sans";
+    font-size: 17px;
+    color: #282828;
 }
 
-.book-bottom:before {
-    content: " ";
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-left: 36px;
-    border-bottom: 1px solid;
-    width: 30px;
-    display: flex;
+.block-element {
+    width: 355px;
+    margin: 10px auto;
+    display: block;
 }
 
-.book-bottom:after {
-    content: " ";
-    display: flex;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-left: 36px;
-    border-bottom: 1px solid;
-    width: 30px;
+.fixed-form {
+    width: 350px;
+    height: 35px;
+    font-family: "PT Sans";
+    color: #c1c9d5;
+    font-size: 17px;
 }
 
-.book-bottom:hover:before , .book-bottom:hover:after, .book-bottom:hover {
-    color: #d67900;
+.html-form__button {
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: center;
+    background-color: #0bc691;
+    box-sizing: border-box;
+    border-radius: 3px;
 }
 
-.book-bottom__link {
-    font-family: Hind;
-    letter-spacing: 0.2em;
+.html-form__button-text {
     text-decoration: none;
-    color: inherit;
+    font-size: 17px;
+    font-family: "PT Sans";
+    color: #ffffff;
 }
 
-.comment__icon {
-    background-image: url(../images/Icon.png);
-    background-position:left center;
-    background-repeat: no-repeat;
+.html-form__footer {
+    height: 120px;
 }
 
-.object-book {
-    width: 360px;
-    display: inline-block;
-    box-shadow: 0 0 30px rgba(0,0,3,0.5);
-}
